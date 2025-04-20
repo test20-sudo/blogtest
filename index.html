@@ -2,21 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pencify Blog App</title>
+  <title>Pencify</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- PDF Upload Loader (can be triggered via custom UI) -->
-  <input type="file" id="pdfLoader" accept="application/pdf" hidden />
+  <h1>Pencify</h1>
+  <div id="sections"></div>
 
-  <!-- Sidebar for navigation -->
-  <nav id="sidebar"></nav>
-
-  <!-- Main content area -->
-  <main id="content"></main>
-
-  <!-- Script -->
   <script src="script.js"></script>
+  <script>
+    // Load sections on the homepage
+    loadSections();
+  </script>
 </body>
 </html>

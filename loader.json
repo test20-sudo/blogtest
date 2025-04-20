@@ -1,11 +1,14 @@
 [
     {
-      "id": "tech",
-      "title": "Tech",
+      "id": "blabla",
+      "title": "problem statement",
       "children": [
-        { "id": "mobiles", "title": "Mobiles", "pdfs": [] }
-      ],
-      "pdfs": []
+        {
+          "id": "mobiles",
+          "title": "Mobiles",
+          "pdfs": ["docs/Problem statement.pdf"]
+        }
+      ]
     }
   ]
   

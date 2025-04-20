@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PDF Viewer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+</head>
+<body>
+  <h1 id="pdf-title"></h1>
+  <div id="pdf-content"></div>
+
+  <script src="script.js"></script>
+  <script>
+    // Load and display the PDF based on the URL parameter
+    const params = new URLSearchParams(window.location.search);
+    const pdfPath = params.get('pdf');
+    const pdfTitle = params.get('title') || 'PDF Viewer';
+    document.getElementById('pdf-title').textContent = pdfTitle;
+    if (pdfPath) {
+      loadAndDisplayPDF(pdfPath, document.getElementById('pdf-content'));
+    } else {
+      document.getElementById('pdf-content').textContent = 'PDF not found';
+    }
+  </script>
+</body>
+</html>

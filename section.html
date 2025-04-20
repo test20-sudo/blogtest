@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Section</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 id="section-title"></h1>
+  <div id="subsections"></div>
+
+  <script src="script.js"></script>
+  <script>
+    // Load subsections based on the section ID from the URL
+    const params = new URLSearchParams(window.location.search);
+    const sectionId = params.get('section');
+    if (sectionId) {
+      loadSubsections(sectionId);
+    } else {
+      document.getElementById('section-title').textContent = 'Section not found';
+    }
+  </script>
+</body>
+</html>
