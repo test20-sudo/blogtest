@@ -1,11 +1,16 @@
 [
     {
       "id": "blabla",
-      "title": "problem statement",
+      "title": "me.",
       "children": [
         {
           "id": "mobiles",
-          "title": "Mobiles",
+          "title": "starting off?",
+          "pdfs": ["docs/StartingOff.pdf"]
+        },
+        {
+          "id": "mobiles",
+          "title": "brainstorm",
           "pdfs": ["docs/Problem statement.pdf"]
         }
       ]
